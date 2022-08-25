@@ -9,7 +9,7 @@ The name is also the new directory.
 
 The following steps must then be performed.
 
-`cd <>new-project`
+`cd <new-project>`
 
 `npm ci`
 
