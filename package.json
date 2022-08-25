@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "Base repository for the work on new projects",
   "main": "index.js",
+  "engines": {
+    "node": ">=16.0.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cypress:open": "npx cypress open"
   },
   "repository": {
     "type": "git",
