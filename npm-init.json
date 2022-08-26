@@ -1,10 +1,5 @@
 {
   "prompts": {
-    "name": {
-      "type": "string",
-      "required": true,
-      "message": "Project Name"
-    },
     "description": {
       "type": "input",
       "required": true,
