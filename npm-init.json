@@ -6,5 +6,5 @@
       "message": "Project Description"
     }
   },
-  "completeMessage": "To get started:\n  cd {{name}}\n  npm ci\n  npx cypress open"
+  "completeMessage": "To get started:\n  cd {{projectName}}\n  npm ci\n  npx cypress open"
 }
