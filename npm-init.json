@@ -1,0 +1,10 @@
+{
+  "prompts": {
+    "description": {
+      "type": "input",
+      "required": true,
+      "message": "Project Description"
+    }
+  },
+  "completeMessage": "To get started:\n  cd {{projectName}}\n  npm ci\n  npx cypress open"
+}
