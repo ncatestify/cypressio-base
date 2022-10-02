@@ -11,6 +11,8 @@ The following steps must then be performed.
 
 `cd <new-project>`
 
-`npm ci`
+`npm install`
+
+`change baseUrl in cypress.config.ts to your new testing site`
 
 `npx cypress open` or `npm run cypress:open`
