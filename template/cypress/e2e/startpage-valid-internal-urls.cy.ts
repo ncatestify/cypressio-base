@@ -3,7 +3,7 @@ describe('Validate internal links', () => {
 
   beforeEach(() => {
     cy.visit('/');
-    cy.wait(Cypress.env('waitForStartpage'));
+    cy.get('a', { timeout: Cypress.env('waitForStartpage') }).should('be.visible');
   });
 
   it('Every page has status code 200 and no redirect <200>', () => {
