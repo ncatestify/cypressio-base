@@ -21,15 +21,15 @@
   },
   "homepage": "https://github.com/ncatestify/cypressio-base#readme",
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "5.35.1",
-    "@typescript-eslint/parser": "5.35.1",
-    "cypress": "10.6.0",
-    "eslint": "8.22.0",
+    "@typescript-eslint/eslint-plugin": "5.38.1",
+    "@typescript-eslint/parser": "5.38.1",
+    "cypress": "10.9.0",
+    "eslint": "8.24.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-cypress": "2.12.1",
     "eslint-plugin-jsonc": "2.4.0",
     "eslint-plugin-prettier": "4.2.1",
     "prettier": "2.7.1",
-    "typescript": "4.8.2"
+    "typescript": "4.8.4"
   }
 }
