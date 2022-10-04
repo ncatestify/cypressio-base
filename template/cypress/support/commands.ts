@@ -22,4 +22,35 @@
 //
 //
 // -- This will overwrite an existing command --
-// Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+const { createJSDocTypeExpression } = require('typescript');
+
+Cypress.Commands.add('getInternalUrls', () => {
+  const listOfResults = [];
+  cy.get('a').each((resultItem) => {
+    let singleResult = '';
+    //Retrive Title
+    cy.wrap(resultItem)
+      .invoke('attr', 'href')
+      .then((href) => {
+        if (
+          typeof href !== 'undefined' &&
+          href.indexOf('mailto') == -1 &&
+          href.indexOf('tel') == -1 &&
+          Cypress._.indexOf(listOfResults, href) == -1 &&
+          (href.startsWith('/') || href.startsWith(Cypress.env('startUrl')))
+        ) {
+          singleResult = href;
+        } else {
+          cy.log('Filtered URL: ' + href);
+        }
+      });
+    cy.then(() => {
+      if (singleResult.length) {
+        listOfResults.push(singleResult);
+      }
+    });
+  });
+
+  cy.wrap(listOfResults);
+});

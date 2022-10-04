@@ -18,3 +18,12 @@ import './commands';
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+
+Cypress.on('uncaught:exception', (err, promise) => {
+  if (err.message.includes('o.removeEventListener')) {
+    return false
+  }
+  if (promise) {
+    return false
+  }
+})
