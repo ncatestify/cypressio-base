@@ -23,26 +23,26 @@
 //
 // -- This will overwrite an existing command --
 
-const { createJSDocTypeExpression } = require("typescript");
+const { createJSDocTypeExpression } = require('typescript');
 
-Cypress.Commands.add("getInternalUrls", () => {
-  var listOfResults = [];
-  cy.get("a").each((resultItem) => {
-    var singleResult = "";
+Cypress.Commands.add('getInternalUrls', () => {
+  const listOfResults = [];
+  cy.get('a').each((resultItem) => {
+    let singleResult = '';
     //Retrive Title
     cy.wrap(resultItem)
-      .invoke("attr", "href")
+      .invoke('attr', 'href')
       .then((href) => {
         if (
-          typeof href !== "undefined" &&
-          href.indexOf("mailto") == -1 &&
-          href.indexOf("tel") == -1 &&
+          typeof href !== 'undefined' &&
+          href.indexOf('mailto') == -1 &&
+          href.indexOf('tel') == -1 &&
           Cypress._.indexOf(listOfResults, href) == -1 &&
-          (href.startsWith("/") || href.startsWith(Cypress.env("startUrl")))
+          (href.startsWith('/') || href.startsWith(Cypress.env('startUrl')))
         ) {
           singleResult = href;
         } else {
-          cy.log("Filtered URL: " + href);
+          cy.log('Filtered URL: ' + href);
         }
       });
     cy.then(() => {
