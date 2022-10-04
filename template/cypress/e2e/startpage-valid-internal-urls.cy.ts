@@ -2,13 +2,11 @@ describe('Validate internal links', () => {
   let urls: Array<string>;
 
   beforeEach(() => {
-    cy.visit(Cypress.env('baseUrl'));
+    cy.visit('/');
     cy.wait(Cypress.env('waitForStartpage'));
   });
 
   it('Every page has status code 200 and no redirect <200>', () => {
-    let data: string[] = [];
-
     cy.getInternalUrls().then((urls: Array<string>) => {
       urls.forEach((url) => {
         cy.request({
