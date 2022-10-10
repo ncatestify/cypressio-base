@@ -26,7 +26,7 @@ $ npx cypress open
 
 ## Documentation in Cypress.IO YouTube tutorial
 
-[CYPRESS>IO YoutUbe tutorial playlist](https://studio.youtube.com/channel/UCjVT6iJ_wg7OM0DkV5TpNCQ/playlists)
+[CYPRESS.IO YoutUbe tutorial playlist](https://studio.youtube.com/channel/UCjVT6iJ_wg7OM0DkV5TpNCQ/playlists)
 
 ### Never Code Alone
 
