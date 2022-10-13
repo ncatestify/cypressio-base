@@ -19,6 +19,17 @@ describe('Validate internal links', () => {
     });
   });
 
+  it('Every page is loading', () => {
+    cy.getInternalUrls().then((urls: Array<string>) => {
+      urls.forEach((url) => {
+        cy.visit(url);
+        cy.get('a', { timeout: Cypress.env('waitForStartpage') })
+          .first()
+          .click();
+      });
+    });
+  });
+
   it('Validate that imprint is visible <imprint>', () => {
     cy.get('a').contains('Impressum').should('be.visible');
   });
