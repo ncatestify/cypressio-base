@@ -23,7 +23,9 @@ describe('Validate internal links', () => {
     cy.getInternalUrls().then((urls: Array<string>) => {
       urls.forEach((url) => {
         cy.visit(url);
-        cy.get('a', { timeout: Cypress.env('waitForStartpage') }).should('be.visible');
+        cy.get('a', { timeout: Cypress.env('waitForStartpage') })
+          .first()
+          .click();
       });
     });
   });
