@@ -26,11 +26,11 @@ $ npx cypress open
 
 ## Documentation in Cypress.IO YouTube tutorial
 
-[CYPRESS.IO YoutUbe tutorial playlist](https://studio.youtube.com/channel/UCjVT6iJ_wg7OM0DkV5TpNCQ/playlists)
+[CYPRESS.IO YouTube tutorial playlist](https://studio.youtube.com/channel/UCjVT6iJ_wg7OM0DkV5TpNCQ/playlists)
 
 ### Never Code Alone
 
-We belive in open source and software craftsmenship. All our work, trainings and settings are public. We want to build better working conditions for developer and halp out of legacy hells.
+We believe in open source and software craftsmanship. All our work, trainings and settings are public. We want to build better working conditions for developer and help out of legacy hells.
 
 This is important for our mental health. **AUTOMATE ALL THE THINGS** is the first step to escape to a mindful live.
 
