@@ -23,8 +23,6 @@
 //
 // -- This will overwrite an existing command --
 
-const { createJSDocTypeExpression } = require('typescript');
-
 Cypress.Commands.add('getInternalUrls', () => {
   const listOfResults = [];
   cy.get('a').each((resultItem) => {
@@ -34,11 +32,11 @@ Cypress.Commands.add('getInternalUrls', () => {
       .invoke('attr', 'href')
       .then((href) => {
         if (
+          isInternal(href) &&
           typeof href !== 'undefined' &&
           href.indexOf('mailto') == -1 &&
           href.indexOf('tel') == -1 &&
-          Cypress._.indexOf(listOfResults, href) == -1 &&
-          (href.startsWith('/') || href.startsWith(Cypress.env('startUrl')))
+          Cypress._.indexOf(listOfResults, href) == -1
         ) {
           singleResult = href;
         } else {
@@ -54,3 +52,7 @@ Cypress.Commands.add('getInternalUrls', () => {
 
   cy.wrap(listOfResults);
 });
+
+function isInternal(url: string): boolean {
+  return url.startsWith('/') || url.includes(Cypress.env('baseUrl'));
+}
