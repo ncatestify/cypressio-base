@@ -30,7 +30,7 @@ describe('Validate internal links', () => {
     });
   });
 
-  it('Validate that imprint is visible <imprint>', () => {
-    cy.get('a').contains('Impressum').should('be.visible');
+  it('Validate that imprint is clickable <imprint>', () => {
+    cy.get('a').contains('Impressum').click();
   });
 });
