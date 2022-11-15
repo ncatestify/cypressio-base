@@ -23,8 +23,19 @@ describe('Validate internal links', () => {
   it('Every page is loading', () => {
     cy.getInternalUrls().then((urls: Array<string>) => {
       urls.forEach((url) => {
-        cy.visit(url);
-        cy.get('a', { timeout: Cypress.env('waitForStartpage') }).should('be.visible');
+        cy.request({
+          url: url,
+          followRedirect: false
+        }).then((resp) => {
+          if (resp.headers['content-type'].includes('text/html')) {
+            cy.visit(url);
+            cy.get('a', { timeout: Cypress.env('waitForStartpage') }).should('be.visible');
+          } else {
+            cy.log('Skip content type');
+            cy.log(url);
+            cy.log(resp.headers['content-type'].toString());
+          }
+        });
       });
     });
   });
