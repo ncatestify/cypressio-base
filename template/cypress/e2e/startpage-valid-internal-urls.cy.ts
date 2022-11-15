@@ -8,6 +8,7 @@ describe('Validate internal links', () => {
 
   it('Every page has status code 200 and no redirect <200>', () => {
     cy.getInternalUrls().then((urls: Array<string>) => {
+      cy.wrap(urls).its('length').should('be.gt', 2);
       urls.forEach((url) => {
         cy.request({
           url: url,
@@ -23,9 +24,7 @@ describe('Validate internal links', () => {
     cy.getInternalUrls().then((urls: Array<string>) => {
       urls.forEach((url) => {
         cy.visit(url);
-        cy.get('a', { timeout: Cypress.env('waitForStartpage') })
-          .first()
-          .click();
+        cy.get('a', { timeout: Cypress.env('waitForStartpage') }).should('be.visible');
       });
     });
   });
