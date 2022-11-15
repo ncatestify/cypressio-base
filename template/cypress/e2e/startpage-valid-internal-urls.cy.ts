@@ -8,6 +8,7 @@ describe('Validate internal links', () => {
 
   it('Every page has status code 200 and no redirect <200>', () => {
     cy.getInternalUrls().then((urls: Array<string>) => {
+      cy.wrap(urls).its('length').should('be.gt', 2);
       urls.forEach((url) => {
         cy.request({
           url: url,
