@@ -16,14 +16,16 @@
 // Import commands.js using ES2015 syntax:
 import './commands';
 
+import 'cypress-ncatestify-plugin';
+
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
 
 Cypress.on('uncaught:exception', (err, promise) => {
   if (err.message.includes('o.removeEventListener')) {
-    return false
+    return false;
   }
   if (promise) {
-    return false
+    return false;
   }
-})
+});

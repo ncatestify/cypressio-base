@@ -22,31 +22,3 @@
 //
 //
 // -- This will overwrite an existing command --
-
-Cypress.Commands.add('getInternalUrls', () => {
-  const listOfResults = [];
-  cy.get('a').each((resultItem) => {
-    let singleResult = '';
-    //Retrive Title
-    cy.wrap(resultItem)
-      .invoke('attr', 'href')
-      .then((href) => {
-        if (isInternal(href) && Cypress._.indexOf(listOfResults, href) == -1) {
-          singleResult = href;
-        } else {
-          cy.log('Filtered URL: ' + href);
-        }
-      });
-    cy.then(() => {
-      if (singleResult.length) {
-        listOfResults.push(singleResult);
-      }
-    });
-  });
-
-  cy.wrap(listOfResults);
-});
-
-function isInternal(url: string): boolean {
-  return url.startsWith('/') || url.includes(Cypress.config().baseUrl);
-}
