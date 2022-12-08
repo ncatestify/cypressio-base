@@ -8,7 +8,7 @@
     "module": "amd",
     "esModuleInterop": true,
     "moduleResolution": "node",
-    "target": "es6",
+    "target": "ES2019",
     "lib": ["esnext", "dom"],
     "types": ["cypress", "node"],
     "allowSyntheticDefaultImports": true,
