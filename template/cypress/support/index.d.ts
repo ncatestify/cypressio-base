@@ -1,3 +1,1 @@
-declare namespace Cypress {
-  interface Chainable<Subject = any> {}
-}
+declare namespace Cypress {}
