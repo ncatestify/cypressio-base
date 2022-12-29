@@ -5,14 +5,18 @@ describe('TESTIFY base tests', () => {
   });
 
   it('Imprint link on starpage is clickable', () => {
-    cy.ncaValidateImprintClickable();
+    cy.ttValidateImprintClickable();
+  });
+
+  it('No external google fonts are loading', () => {
+    cy.ttValidateNoGoogleFonts();
   });
 
   it('Every internal page on startpage has status code 200', () => {
-    cy.ncaEveryInternalLinkStatusOk();
+    cy.ttEveryInternalLinkStatusOk();
   });
 
   it('Every internal page on startpage is loading', () => {
-    cy.ncaEveryInternalLinkIsLoading();
+    cy.ttEveryInternalLinkIsLoading();
   });
 });
