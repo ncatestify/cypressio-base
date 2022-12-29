@@ -12,7 +12,7 @@ The following steps must then be performed.
 
 `cd <new-project>`
 
-`npm ci`
+`npm install`
 
 `npx cypress open` or `npm run cypress:open`
 
