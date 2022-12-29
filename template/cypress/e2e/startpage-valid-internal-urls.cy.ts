@@ -19,4 +19,8 @@ describe('TESTIFY base tests', () => {
   it('Every internal page on startpage is loading', () => {
     cy.ttEveryInternalLinkIsLoading();
   });
+
+  it('Validates no google fonts are being loaded', () => {
+    cy.ncaValidateNoGoogleFonts();
+  });
 });
