@@ -21,6 +21,6 @@ describe('TESTIFY base tests', () => {
   });
 
   it('Validates no google fonts are being loaded', () => {
-    cy.ncaValidateNoGoogleFonts();
+    cy.ttValidateNoGoogleFonts();
   });
 });
