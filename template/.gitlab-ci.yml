@@ -1,6 +1,6 @@
 variables:
   ENVIRONMENT:
-    value: "production"
+    value: 'production'
     description: "The environment target. Change this variable to 'staging' or 'production' if needed."
 
 stages:
@@ -10,7 +10,7 @@ dev:
   stage: test
   image:
     name: cypress/included:9.6.1
-    entrypoint: [""]
+    entrypoint: ['']
   rules:
     - if: $CI_PIPELINE_SOURCE == "schedule"
   artifacts:
@@ -23,4 +23,4 @@ dev:
     - npm install
     - npx cypress run
   tags:
-    - docker-executor
+    - docker1
