@@ -2,9 +2,11 @@
 
 [TESTIFY.TEAM](https://testify.team) - WE FIND BUGS. **AUTOMATED**.
 
+![TESTIFY-Logo-horizontal](https://user-images.githubusercontent.com/108877931/213471758-3fa5694f-2b6f-4c1d-9161-26b512fe3968.jpg)
+
 Errors are often in the details. Finding bugs manually can be like searching in a digital haystack: You waste time and resources. Automated website testing reduces both. At the same time, it increases the effectiveness and security of your application. TESTIFY is your agency for automated website testing.
 
-## How to start
+## Installation
 
 Initialize a new repo
 
@@ -21,6 +23,26 @@ The following steps must then be performed.
 ```bash
 $ cd <new-project>
 $ npm ci
+$ npx cypress open
+```
+
+## Setup
+
+Update baseUrl in cypress.config.ts
+
+```bash
+baseUrl: 'https://testify.team'
+```
+
+## Running
+
+```bash
+$ npx cypress run
+```
+
+Or if you want to use the Gui
+
+```bash
 $ npx cypress open
 ```
 
