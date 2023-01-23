@@ -22,7 +22,7 @@ The following steps must then be performed.
 
 ```bash
 $ cd <new-project>
-$ npm ci
+$ npm install
 $ npx cypress open
 ```
 
