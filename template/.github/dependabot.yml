@@ -9,13 +9,13 @@ updates:
     directory: /
     schedule:
       interval: daily
-      timezone: "Europe/Berlin"
-  - package-ecosystem: "npm" # See documentation for possible values
-    directory: "/" # Location of package manifests
+      timezone: 'Europe/Berlin'
+  - package-ecosystem: 'npm' # See documentation for possible values
+    directory: '/' # Location of package manifests
     schedule:
-      interval: "daily"
-      timezone: "Europe/Berlin"
+      interval: 'daily'
+      timezone: 'Europe/Berlin'
     versioning-strategy: increase
     commit-message:
       # Prefix all commit messages with "npm"
-      prefix: "chore(deps): "
+      prefix: 'chore(deps): '
