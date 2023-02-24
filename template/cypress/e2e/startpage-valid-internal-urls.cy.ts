@@ -9,7 +9,7 @@ describe('TESTIFY base tests', () => {
   });
 
   it('No external google fonts are loading', () => {
-    cy.ttValidateNoGoogleFonts();
+    cy.ttValidateNoGoogleServices();
   });
 
   it('Every internal page on startpage has status code 200', () => {
@@ -18,9 +18,5 @@ describe('TESTIFY base tests', () => {
 
   it('Every internal page on startpage is loading', () => {
     cy.ttEveryInternalLinkIsLoading();
-  });
-
-  it('Validates no google fonts are being loaded', () => {
-    cy.ttValidateNoGoogleFonts();
   });
 });
