@@ -34,6 +34,6 @@
   },
   "devDependencies": {
     "cypress": "^12.5.1",
-    "cypress-ncatestify-plugin": "^2.0.12"
+    "cypress-ncatestify-plugin": "^2.0.13"
   }
 }
