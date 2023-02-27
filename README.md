@@ -23,6 +23,29 @@ $ cd <new-project>
 $ npm install
 $ npx cypress open
 ```
+## Commands
+
+This template includes pre-made commands you can use in your tests.
+
+#### Imprint is clickable
+```bash
+cy.ttValidateImprintClickable()
+```
+
+#### No external google fonts are loading
+```bash
+cy.ttValidateNoGoogleFonts()
+```
+
+#### Every internal page on startpage returns status code 200
+```bash
+cy.ttEveryInternalLinkStatusOk()
+```
+
+#### Every internal page on startpage is loading
+```bash
+cy.ttEveryInternalLinkIsLoading()
+```
 
 ## Documentation in Cypress.IO YouTube tutorial
 
