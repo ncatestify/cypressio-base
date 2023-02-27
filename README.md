@@ -25,6 +25,27 @@ $ cd <new-project>
 $ npm install
 $ npx cypress open
 ```
+
+## Setup
+
+Update baseUrl in cypress.config.ts
+
+```bash
+baseUrl: 'https://testify.team'
+```
+
+## Running
+
+```bash
+$ npx cypress run
+```
+
+Or if you want to use the Gui
+
+```bash
+$ npx cypress open
+```
+
 ## Commands
 
 This template includes pre-made commands you can use in your tests.
@@ -47,26 +68,6 @@ cy.ttEveryInternalLinkStatusOk()
 #### Every internal page on startpage is loading
 ```bash
 cy.ttEveryInternalLinkIsLoading()
-```
-
-## Setup
-
-Update baseUrl in cypress.config.ts
-
-```bash
-baseUrl: 'https://testify.team'
-```
-
-## Running
-
-```bash
-$ npx cypress run
-```
-
-Or if you want to use the Gui
-
-```bash
-$ npx cypress open
 ```
 
 ## Documentation in Cypress.IO YouTube tutorial
