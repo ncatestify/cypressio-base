@@ -58,7 +58,6 @@ cy.ttValidateImprintClickable()
 Validates website has an imprint and that it's clickable. 
 An imprint is mandatory for websites in Germany, Austria and Switzerland.
 
-#### No external google fonts are loading
 ```bash
 cy.ttValidateNoGoogleFonts()
 ```
