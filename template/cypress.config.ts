@@ -4,7 +4,7 @@ dotenv.config();
 
 export default defineConfig({
   e2e: {
-    baseUrl: process.env.API_URL || 'https://testify.team'
+    baseUrl: process.env.URL || 'https://testify.team'
   },
   viewportWidth: 1200
 });
