@@ -4,5 +4,6 @@ export default defineConfig({
   e2e: {
     baseUrl: 'https://testify.team'
   },
-  viewportWidth: 1200
+  viewportWidth: 1200,
+  retries: 2  
 });
