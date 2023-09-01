@@ -1,6 +1,6 @@
 {
   "name": "cypressio-base",
-  "version": "1.0.0",
+  "version": "1.5.1",
   "description": "Base repository for the work on new projects",
   "main": "index.js",
   "engines": {
