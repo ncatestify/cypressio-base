@@ -50,33 +50,9 @@ $ npx cypress open
 
 This template includes pre-made commands you can use in your tests.
 
-### Critical
+### List of commands
 
-```bash
-cy.ttValidateImprintClickable()
-```
-Validates website has an imprint and that it's clickable. 
-An imprint is mandatory for websites in Germany, Austria and Switzerland.
-
-```bash
-cy.ttValidateNoGoogleFonts()
-```
-Validates no google fonts are being loaded. 
-This is important as loading Google Fonts causes a violation against GDPR.
-
-### Monitoring
-
-```bash
-cy.ttEveryInternalLinkStatusOk()
-```
-Sends a request to all internal pages on page and validates they return a status code 200. 
-A status code 200 means that the request has succeeded.
-
-```bash
-cy.ttEveryInternalLinkIsLoading()
-```
-Visits all internal pages on page and validates that they're loading.
-This confirms that there are no dead links on page.
+[TESTIFY Plugin list](https://github.com/rogoit/cypress-base-plugin)
 
 ## Documentation in Cypress.IO YouTube tutorial
 
