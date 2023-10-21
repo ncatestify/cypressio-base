@@ -22,6 +22,9 @@
   },
   "homepage": "https://github.com/ncatestify/cypressio-base#readme",
   "dependencies": {
+    "cypress-ncatestify-plugin": "^2.1.00"
+  },
+  "devDependencies": {
     "@typescript-eslint/eslint-plugin": "5.40.0",
     "@typescript-eslint/parser": "5.40.0",
     "eslint": "8.25.0",
@@ -31,10 +34,5 @@
     "eslint-plugin-prettier": "4.2.1",
     "prettier": "2.7.1",
     "typescript": "4.8.4"
-  },
-  "devDependencies": {
-    "cypress": "^13.2.0",
-    "cypress-axe": "^1.4.0",
-    "cypress-ncatestify-plugin": "^2.0.35"
   }
 }
