@@ -12,7 +12,7 @@ describe('Validate links.', () => {
     cy.ttEveryInternalLinkStatusOk();  
   });
 
-  it('All interla links are loading', () => {
+  it('All internal links are loading', () => {
     cy.ttEveryInternalLinkIsLoading();  
   })  
 })
