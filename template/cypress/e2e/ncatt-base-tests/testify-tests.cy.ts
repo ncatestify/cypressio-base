@@ -5,6 +5,7 @@ describe('TESTIFY base tests', () => {
   });
 
   it('Run all TESTIFY base tests', () => {
+    cy.ttSetupConsoleErrorListener();
     cy.ttValidateAllImagesResponseStatusOk();
     cy.ttEveryInternalLinkStatusOk();
     cy.ttValidateNoGoogleServices();
@@ -15,7 +16,6 @@ describe('TESTIFY base tests', () => {
     cy.ttValidateLanguageTag();
     cy.ttDetectHttp();
     cy.ttThreshold();
-    cy.ttSetupConsoleErrorListener();
     cy.visit('/console-errors/');
   });
 });
