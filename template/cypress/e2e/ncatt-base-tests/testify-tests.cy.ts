@@ -4,7 +4,8 @@ describe('TESTIFY base tests', () => {
     cy.visit('/');
   });
 
-  it('Imprint link on starpage is clickable', () => {
+  it('Run all TESTIFY base tests', () => {
+    cy.ttSetupConsoleErrorListener();
     cy.ttValidateAllImagesResponseStatusOk();
     cy.ttEveryInternalLinkStatusOk();
     cy.ttValidateNoGoogleServices();
@@ -12,6 +13,9 @@ describe('TESTIFY base tests', () => {
     cy.ttValidatePageContent();
     cy.ttInvalidPath404();
     cy.ttAccessibility();
+    cy.ttValidateLanguageTag();
+    cy.ttDetectHttp();
+    cy.ttThreshold();
+    cy.visit('/console-errors/');
   });
-
 });
