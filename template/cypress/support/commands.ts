@@ -22,5 +22,5 @@
 //
 //
 // -- This will overwrite an existing command --
-
+import 'cypress-axe';
 import 'cypress-ncatestify-plugin';
