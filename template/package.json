@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/ncatestify/cypressio-base#readme",
   "dependencies": {
-    "cypress-ncatestify-plugin": "^2.1.43"
+    "cypress-ncatestify-plugin": "^2.1.46"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.40.0",
