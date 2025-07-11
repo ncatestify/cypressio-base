@@ -20,8 +20,5 @@
     "url": "https://github.com/ncatestify/cypressio-base/issues"
   },
   "homepage": "https://github.com/ncatestify/cypressio-base#readme",
-  "dependencies": {
-    "cypress-ncatestify-plugin": "^2.1.52"
-  },
   "devDependencies": {}
 }
