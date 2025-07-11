@@ -6,6 +6,11 @@
 
 Errors are often in the details. Finding bugs manually can be like searching in a digital haystack: You waste time and resources. Automated website testing reduces both. At the same time, it increases the effectiveness and security of your application. TESTIFY is your agency for automated website testing.
 
+## Prerequisites
+
+- Node.js 18.x or higher (20.x or 22.x recommended)
+- npm 6.x or higher
+
 ## Installation
 
 Initialize a new repo
@@ -48,11 +53,19 @@ $ npx cypress open
 
 ## Commands
 
-This template includes pre-made commands you can use in your tests.
+This template includes pre-made commands from the [cypress-ncatestify-plugin](https://github.com/ncatestify/cypress-base-plugin) that you can use in your tests.
 
-### List of commands
+### Example Commands
 
-[TESTIFY Plugin list](https://github.com/rogoit/cypress-base-plugin)
+- `cy.ttAccessibility()` - Check accessibility
+- `cy.ttValidateMetaTags()` - Validate meta tags
+- `cy.ttDetectHttp()` - Find insecure HTTP links
+- `cy.ttInvalidPath404()` - Check for 404 errors
+- `cy.ttPageSpeed()` - Measure page performance
+
+### Full Command List
+
+[View all commands in the NCAtestify Plugin Documentation](https://github.com/ncatestify/cypress-base-plugin)
 
 ## Documentation in Cypress.IO YouTube tutorial
 
