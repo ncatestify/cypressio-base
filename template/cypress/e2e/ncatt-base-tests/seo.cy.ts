@@ -5,6 +5,7 @@ describe('SEO validation for the startpage', () => {
 
   beforeEach(() => {
     startPage.visit();
+    startPage.waitForPageLoaded();
   });
 
   it('Only one h1', () => {

@@ -6,6 +6,6 @@ export abstract class BasePage extends PluginBasePage {
   }
 
   waitForPageLoaded() {
-    cy.wait(2000);
+    cy.ttPageLoaded();
   }
 }

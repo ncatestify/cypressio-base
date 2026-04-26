@@ -1,6 +1,6 @@
 import { StartPage } from '@/pages/StartPage';
 
-describe('Image validation.', () => {
+describe('Page content.', () => {
   const startPage: StartPage = new StartPage();
 
   beforeEach(() => {
@@ -8,7 +8,7 @@ describe('Image validation.', () => {
     startPage.waitForPageLoaded();
   });
 
-  it('All images have response status 200', () => {
-    cy.ttValidateAllImagesResponseStatusOk('/');
+  it('Page has valid content', () => {
+    cy.ttValidatePageContent();
   });
 });

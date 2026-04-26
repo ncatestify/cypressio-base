@@ -4,7 +4,7 @@
   "description": "{{description}}",
   "main": "index.js",
   "engines": {
-    "node": ">=16.0.0"
+    "node": ">=20.1.0"
   },
   "scripts": {
     "cypress:open": "npx cypress open",
@@ -22,16 +22,16 @@
   },
   "homepage": "https://github.com/ncatestify/cypressio-base#readme",
   "dependencies": {
-    "cypress-ncatestify-plugin": "^2.1.71"
+    "cypress-ncatestify-plugin": "^2.2.1"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.40.0",
-    "@typescript-eslint/parser": "^5.40.0",
-    "eslint": "^8.25.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-cypress": "^2.12.1",
-    "eslint-plugin-jsonc": "^2.4.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "prettier": "^2.7.1"
+    "@typescript-eslint/eslint-plugin": "^8.18.0",
+    "@typescript-eslint/parser": "^8.18.0",
+    "eslint": "^9.16.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-cypress": "^4.1.0",
+    "eslint-plugin-jsonc": "^2.18.0",
+    "eslint-plugin-prettier": "^5.2.0",
+    "prettier": "^3.4.0"
   }
 }
