@@ -2,7 +2,8 @@ import { defineConfig } from 'cypress';
 
 export default defineConfig({
   e2e: {
-    baseUrl: 'https://testify.team'
+    baseUrl: 'https://testify.team',
+    allowCypressEnv: false
   },
   retries: {
     runMode: 2
