@@ -67,6 +67,33 @@ This template includes pre-made commands from the [cypress-ncatestify-plugin](ht
 
 [View all commands in the NCAtestify Plugin Documentation](https://github.com/ncatestify/cypress-base-plugin)
 
+## Linting
+
+This template ships with a preconfigured ESLint setup based on the official [eslint-plugin-cypress](https://github.com/cypress-io/eslint-plugin-cypress). The flat config lives in `eslint.config.js`.
+
+Run the linter with:
+
+```bash
+$ npm run lint
+```
+
+The setup includes:
+
+- `eslint-plugin-cypress` recommended rules - catches Cypress anti-patterns like assigning command return values (`const btn = cy.get('button')`) or unsafe command chaining
+- `eslint-plugin-mocha` - fails the build when a `.only` or `.skip` is committed by accident
+- `eslint-plugin-chai-friendly` - allows chai assertion expressions like `expect(value).to.be.true`
+- `eslint-plugin-jsonc` - lints JSON files
+
+Rule severities can be adjusted in `eslint.config.js`:
+
+```js
+{
+  rules: {
+    'cypress/no-unnecessary-waiting': 'off'
+  }
+}
+```
+
 ## Documentation in Cypress.IO YouTube tutorial
 
 [CYPRESS.IO YouTube tutorial playlist](https://studio.youtube.com/channel/UCjVT6iJ_wg7OM0DkV5TpNCQ/playlists)

@@ -16,6 +16,10 @@ The following steps must then be performed.
 
 `npx cypress open` or `npm run cypress:open`
 
+## Linting
+
+`npm run lint` runs ESLint with the official [eslint-plugin-cypress](https://github.com/cypress-io/eslint-plugin-cypress) plus mocha and chai-friendly rules. Adjust rule severities in `eslint.config.js`.
+
 ### Open Source project by TESTIFY.TEAM
 
 [TESTIFY.TEAM](https://testify.team) - WE FIND BUGS. **AUTOMATED**.
