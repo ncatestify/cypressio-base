@@ -8,6 +8,7 @@
   },
   "scripts": {
     "cypress:open": "npx cypress open",
+    "lint": "eslint .",
     "prettier": "npx prettier --write ."
   },
   "repository": {
@@ -22,16 +23,17 @@
   },
   "homepage": "https://github.com/ncatestify/cypressio-base#readme",
   "dependencies": {
-    "cypress-ncatestify-plugin": "^2.2.4"
+    "cypress-ncatestify-plugin": "^2.2.7"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^8.18.0",
-    "@typescript-eslint/parser": "^8.18.0",
-    "eslint": "^9.16.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-cypress": "^4.1.0",
-    "eslint-plugin-jsonc": "^2.18.0",
-    "eslint-plugin-prettier": "^5.2.0",
-    "prettier": "^3.4.0"
+    "@typescript-eslint/eslint-plugin": "^8.71.1",
+    "@typescript-eslint/parser": "^8.71.1",
+    "eslint": "^9.39.5",
+    "eslint-plugin-chai-friendly": "^1.2.1",
+    "eslint-plugin-cypress": "^6.4.4",
+    "eslint-plugin-jsonc": "^2.21.1",
+    "eslint-plugin-mocha": "^11.3.0",
+    "globals": "^16.5.0",
+    "prettier": "^3.9.9"
   }
 }
